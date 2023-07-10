@@ -1,38 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Repository-List {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Repository-List-Item {
+  padding: 8px;
+  border: solid 1px lightgray;
+  border-top: none;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.User-Group-Title {
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.Repository-List-Item:first-of-type {
+  border-top: solid 1px lightgray;
+}
+
+.User-Container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.User-Avatar {
+  max-height: 175px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.User-Name {
+  font-size: xx-large;
+  font-weight: 350;
+}
+
+.Control {
+  display: block;
+  margin: 5px;
+  width: 100%;
+}
+
+.Control-Padding {
+  padding: 12px 18px;
+}
+
+.Reset-Btn {
+  margin: 5px 0px;
 }
