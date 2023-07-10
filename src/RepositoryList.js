@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
+import { PropTypes } from 'prop-types';
 
-export default function RepositoryList(props) {
+function RepositoryList(props) {
     return (
         <ul className='Repository-List'>
             {props.repositories.length > 0 && props.repositories.map((repo) => {
@@ -12,3 +13,9 @@ export default function RepositoryList(props) {
         </ul>
     )
 }
+
+RepositoryList.propTypes = {
+    repositories: PropTypes.array
+};
+
+export default RepositoryList;

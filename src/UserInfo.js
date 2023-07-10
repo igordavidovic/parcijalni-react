@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
-export default class UserInfo extends React.Component {
+class UserInfo extends React.Component {
     render() {
         return (
             <div>
@@ -15,3 +16,12 @@ export default class UserInfo extends React.Component {
         );
     }
 }
+
+UserInfo.propTypes = {
+    avatar_url: PropTypes.string,
+    name: PropTypes.string,
+    bio: PropTypes.string,
+    location: PropTypes.string
+}
+
+export default UserInfo;
